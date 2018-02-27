@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function validateForm() {
+		    var name = document.forms["myForm"]["name"].value;
+		    var email = document.forms["myForm"]["email"].value;
+		    var batch = document.forms["myForm"]["batch"].value;
+		    var phone = document.forms["myForm"]["phone"].value;
+		    var age = document.forms["myForm"]["age"].value;
+		    if (name == "") {
+		        alert("Name must be filled out");
+		        return false;
+		    }
+		    if (email == "") {
+		        alert("Email must be filled out");
+		        return false;
+		    }
+		    if (batch == "") {
+		        alert("Batch must be filled out");
+		        return false;
+		    }
+		    if (phone == "" ) {
+		        alert("Phone must be filled out");
+		        return false;
+		    }
+         
+		    
+		    if (age == "") {
+		        alert("Age must be filled out");
+		        return false;
+		   
+		}
+	</script>
+</head>
+<body>
+	<form name="myForm" action="#" method="post" onsubmit="return validateForm()">
+	<table>
+		<tr>
+			<td><label>Name</label></td>
+			<td><input type="text" name="name"></td>
+		</tr>
+		<tr>
+			<td><label>Email</label></td>
+			<td><input type="email" name="email"></td>
+		</tr>
+		<tr>
+			<td><label>Batch</label></td>
+			<td><input type="text" name="batch"></td>
+		</tr>
+		<tr>
+			<td><label>Phone</label></td>
+			<td><input type="number" name="phone"  min="0"  ></td>
+		</tr>
+		<tr>
+			<td><label>Age</label></td>
+			<td><input type="number" name="age"><br></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" name="" value="Submit"></td>
+		</tr>
+	</table>
+		
+		
+	</form>
+</body>
+</html>
